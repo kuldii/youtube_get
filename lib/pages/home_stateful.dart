@@ -18,10 +18,16 @@ class _HomeStatefulState extends State<HomeStateful> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: 100,
-              width: 100,
-              child: Image.network("https://reqres.in/img/faces/2-image.jpg"),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Container(
+                height: 100,
+                width: 100,
+                child: Image.network(
+                  "https://www.uclg-planning.org/sites/default/files/styles/featured_home_left/public/no-user-image-square.jpg?itok=PANMBJF-",
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
             SizedBox(height: 20),
             FittedBox(
